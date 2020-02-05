@@ -17,6 +17,8 @@ body {
     max-width: 1145px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .title {
@@ -339,7 +341,7 @@ body {
     padding: 33px;
     border: 3px solid #f3f3f3;
     border-radius: 5px;
-    z-index: 1;
+    position: relative;
 }
 
 .image__container {
@@ -393,10 +395,9 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    z-index: 11;
+    z-index: 10;
     bottom: 0;
     width: 100%;
-    display: none;
 }
 
 .cards__image {
@@ -464,18 +465,23 @@ body {
     text-transform: uppercase;
 }
 
-.hidden-paragraph {
+.hidden-paragraph{
     display: none;
 }
 
 .cards__box:hover {
-    z-index: 10;
-    height: 575px;
+    z-index: 11;
+    height: max-content;
+    position: absolute;
 }
 
-.cards__box:hover .hidden-paragraph,
-.cards__box:hover .image-button{
+.cards__box:hover .hidden-paragraph{
     display: block;
+}
+
+.cards__wrapper{
+    max-width: 33%;
+    width: 100%;
 }
 
 
