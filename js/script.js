@@ -1,5 +1,5 @@
-jQuery("document").ready(function () {
-    jQuery(".product__btn").on("click", function () {
-        jQuery(".popup-window").addClass("popup-window-active");
+$("document").ready(function () {
+    $(".product__btn").on("click", function () {
+        $(".popup-window").addClass("popup-window-active");
     });
 });
