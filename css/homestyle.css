@@ -1697,5 +1697,20 @@ div.popup-window-active {
     }
 }
 @media screen and (max-width:910px){
-
+    .catalog-bot__image {
+        position: relative;
+        top: -50px;
+        left: -154px;
+        max-height: none;
+    }
+    .catalog__bottom .catalog__inner {
+        
+        margin-bottom: 15px;
+    }
+    .catalog__inner {
+        
+        width: 95%;
+        max-width: none;
+        
+    }
 }
