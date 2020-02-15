@@ -769,16 +769,15 @@ a {
 .filters__inner {
   background-color: white;
   box-shadow: 0 0 8px rgb(229, 229, 229);
-  padding-left: 30px;
-  padding-bottom: 30px;
-  width: 95vw;
-  margin: 0 auto;
+  padding: 30px;
+  margin: 0 15px;
 }
 
 .filters__top {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .filters__list {
@@ -789,11 +788,13 @@ a {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-right: 15px;
 }
 
 .filters__list li {
   float: left;
   padding: 15px;
+  padding-left: 0;
 }
 
 .filters__list li a {
@@ -812,6 +813,7 @@ a {
 
 .filters__bottom {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filters__select {
@@ -1000,14 +1002,14 @@ a {
 /*-------------------------------------------*/
 
 .button-plintus {
-  margin: 10px 0;
+  margin: 10px;
   max-width: 1145px;
   width: 100%;
 }
 
 .button__box {
   width: 100%;
-  min-width: 1145px;
+
   padding-bottom: 26px;
   padding-top: 26px;
   text-align: center;
@@ -1048,6 +1050,7 @@ a {
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 1px;
+  padding:0 15px;
 }
 
 /*-------------------------------------------*/
@@ -1698,6 +1701,22 @@ div.popup-window-active {
     height: 300px;
   }
 }
+@media screen and (max-width: 1125px) {
+  .cards__wrapper {
+    max-width: 49%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 805px) {
+  .cards__wrapper {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 925px) {
   .catalog-bot__image {
     position: relative;
@@ -1741,6 +1760,14 @@ div.popup-window-active {
   }
   .swiper {
     display: block;
+  }
+}
+@media screen and (max-width: 850px) {
+  
+}
+@media screen and (max-width: 833px) {
+  .filters__select {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
