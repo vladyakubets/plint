@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/homestyle.css">
     <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/homestyle.css">
+    
     <title>PlintusMarket</title>
 </head>
 
@@ -27,14 +33,19 @@
                     <div class="busket__top">
                         <a href="basket.html" target="_blank"><div class="img-wrap-1">
                             <div class="img-wrap-2"> <img src="images/busket/busket.png" alt="busket icon"> </div>
-                        </div></a></div>
+                        </div></a>
+                    </div>
+                    <div class="menu__top" >
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <img class="bars" src="images/navbar/icon.png"></img>
+                            </a>
                     </div>
                 </div>
-                    
-            </div>
+            </div>    
         </div>
     </div>
-    <div class="navbar">
+    
+    <div class="navbar" id="myTopnav">
         <div class="container">
             <div class="navbar__inner">
                 <nav> <a class="navbar__link navbar__link-active" href="home.html" target="_self">главная</a> <a class="navbar__link" href="plintus.html" target="_self">плинтус</a> <a class="navbar__link" href="#" target="_self">плитка потолочная</a> <a class="navbar__link" href="#" target="_self">пороги</a> <a class="navbar__link" href="#" target="_self">подложка</a> <a class="navbar__link" href="#" target="_self">панели пфх</a> <a class="navbar__link" href="#" target="_self">профиля</a> <a class="navbar__link" href="#" target="_self">фартуки</a> <a class="navbar__link" href="#" target="_self">клея</a> </nav>
@@ -51,6 +62,73 @@
                     </div>
                 </a>
             </div>
+        </div>
+    </div>
+    <div class="swiper">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><div class="news__left">
+                    <div class="news__inner">
+                        <div class="news__sign">новости</div>
+                        <div class="news__title">Всегда в наличии то, что вам нужно </div>
+                        <div class="news__text">Широкий ассортимент отделочных материалов для вашего дома</div>
+                        <div class="btn">
+                            <a href="#">
+                                <div class="news__button button">каталог</div>
+                            </a>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="swiper-slide">
+                    <div class="news__right">
+                        <div class="news__inner">
+                            <div class="news__sign">new</div>
+                            <div class="news__title">Новая коллекция панеллей ПВХ</div>
+                            <div class="news__text">новаля коллекция панелей пвх solid</div>
+                            <div class="btn">
+                                <a href="#">
+                                    <div class="news__button button">каталог</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><div class="news__left">
+                    <div class="news__inner">
+                        <div class="news__sign">новости</div>
+                        <div class="news__title">Всегда в наличии то, что вам нужно </div>
+                        <div class="news__text">Широкий ассортимент отделочных материалов для вашего дома</div>
+                        <div class="btn">
+                            <a href="#">
+                                <div class="news__button button">каталог</div>
+                            </a>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="swiper-slide">
+                    <div class="news__right">
+                        <div class="news__inner">
+                            <div class="news__sign">new</div>
+                            <div class="news__title">Новая коллекция панеллей ПВХ</div>
+                            <div class="news__text">новаля коллекция панелей пвх solid</div>
+                            <div class="btn">
+                                <a href="#">
+                                    <div class="news__button button">каталог</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            
+        
+            
         </div>
     </div>
     <div class="news">
@@ -303,6 +381,32 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+        <script>
+            var mySwiper = new Swiper ('.swiper-container', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: true,
+          
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+          
+             
+          
+             
+            })
+            </script>
 </body>
 
 </html>
